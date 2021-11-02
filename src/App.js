@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Books from './redux/books/books';
-import Categories from './redux/categories/categories';
-import Navbar from './components/Navbar';
+import Books from './components/books/books';
+import Categories from './components/categories/categories';
+import Navbar from './components/navbar/Navbar';
 
 const App = () => (
   <Router>
