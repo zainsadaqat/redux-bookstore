@@ -20,7 +20,8 @@
     "import/no-unresolved": "off",
     "no-shadow": "off",
     "react-hooks/rules-of-hooks": "off",
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
+    "import/extensions": "off"
   },
   "ignorePatterns": ["dist/", "build/"]
 }
