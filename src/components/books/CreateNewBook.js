@@ -11,7 +11,7 @@ const CreateNewBook = () => {
   const submitBookToStore = (e) => {
     e.preventDefault();
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title,
       author,
     };
@@ -35,6 +35,11 @@ const CreateNewBook = () => {
         onChange={(e) => setAuthor(e.target.value)}
         placeholder="Author"
       />
+      <select name="category" id="category" disabled>
+        <option value="Marvel">Marvel</option>
+        <option value="Harry Potter">Harry Potter</option>
+        <option value="Cricket">Cricket</option>
+      </select>
       <input type="submit" value="Submit" />
     </form>
   );
