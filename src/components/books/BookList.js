@@ -3,6 +3,10 @@ import Book from './Book';
 
 const BookList = () => {
   const books = useSelector((state) => state.booksReducer);
+  const URL =
+    'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/';
+  const ID = 'skMgJnCkDOcgGUzY0dLE';
+  const ENDPOINT = `${URL}${ID}/books`;
 
   return (
     <ul>
