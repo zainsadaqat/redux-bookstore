@@ -3,17 +3,13 @@ import Book from './Book';
 
 const BookList = () => {
   const books = useSelector((state) => state.booksReducer);
-  const URL =
-    'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/';
-  const ID = 'skMgJnCkDOcgGUzY0dLE';
-  const ENDPOINT = `${URL}${ID}/books`;
 
   return (
     <ul>
       {books.map((book) => (
-        <div key={book.id}>
+        <div key={book.item_id}>
           <article>
-            <Book id={book.id} title={book.title} author={book.author} />
+            <Book id={book.item_id} title={book.title} author={book.author} />
           </article>
         </div>
       ))}
