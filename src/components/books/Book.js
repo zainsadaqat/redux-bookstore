@@ -12,8 +12,8 @@ const Book = (props) => {
   return (
     <>
       <li key={id}>
-        {title}
-        {author}
+        <p>{title}</p>
+        <p>{author}</p>
       </li>
       <button type="button" onClick={removeBookFromStore}>
         Remove
