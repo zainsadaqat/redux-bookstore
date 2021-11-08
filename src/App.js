@@ -5,6 +5,10 @@ import Categories from './components/categories/categories';
 import Navbar from './components/navbar/Navbar';
 import store from './redux/configureStore';
 
+const URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/';
+const ID = 'skMgJnCkDOcgGUzY0dLE';
+export const ENDPOINT = `${URL}${ID}/books`;
+
 const App = () => (
   <Provider store={store}>
     <Router>
